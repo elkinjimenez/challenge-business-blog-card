@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AppOcp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# app-ocp
+Proyecto OCP
+>>>>>>> 0556a46d18b6a6ef9a97ab50aaa9dd97b08a2284
