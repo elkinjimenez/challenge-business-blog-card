@@ -26,8 +26,8 @@ export class HomeComponent implements OnInit {
 
   cerrarMenu() {
 
-    document.getElementById('mySidebar').style.width = '0';
-    document.getElementById('main').style.marginLeft = '0';
+    document.getElementById('mySidebar').style.width = '30px';
+    document.getElementById('main').style.marginLeft = '30px';
 
   }
 
