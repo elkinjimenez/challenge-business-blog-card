@@ -9,7 +9,30 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  datosLogueo = { texto: 'Ingresar', usuario: '', clave: '', enviar: false };
+
+  ngOnInit() { }
+
+  activarEnvio(event) {
+
+    if (this.datosLogueo.usuario !== '' && this.datosLogueo.clave !== '') {
+
+      this.datosLogueo.enviar = true;
+
+    } else {
+
+      this.datosLogueo.enviar = false;
+
+    }
+
+  }
+
+  validarDatos(event) {
+
+    this.datosLogueo.enviar = false;
+
+    this.datosLogueo.texto = 'Cargando...';
+
   }
 
 }
