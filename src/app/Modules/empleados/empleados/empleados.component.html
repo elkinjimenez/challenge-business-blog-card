@@ -1,57 +1,56 @@
 <nav class="navbar navbar-light text-white shadow">
   <h5>Información de empleados.</h5>
 </nav>
+
 <div class="container-fluid my-4">
-  <div class="d-flex justify-content-between mb-4">
-    <h5 class="font-weight-bold">Listado de empleados.</h5>
-    <a routerLink='../nuevo-empleado' class="btn btn-primary">Nuevo empleado</a>
-  </div>
-  <div class="table-responsive text-center">
-    <table class="table table-hover table-bordered">
-      <thead class="cabecera-tabla">
-        <tr>
-          <th scope="col">Código</th>
-          <th scope="col">Documento</th>
-          <th scope="col">Nombres</th>
-          <th scope="col">Usuario</th>
-          <th scope="col">Fecha ingreso</th>
-          <th scope="col">Detalle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>1202023</td>
-          <td>Elkin jimenez</td>
-          <td>ekn</td>
-          <td>09/01/2020</td>
-          <td>Primer usuario</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>12342023</td>
-          <td>Omar jimenez</td>
-          <td>omg</td>
-          <td>09/01/2020</td>
-          <td>Segundo usuario</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>1202023</td>
-          <td>Elkin Sanchez</td>
-          <td>els</td>
-          <td>19/01/2020</td>
-          <td>Tercer usuario</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>10203222</td>
-          <td>Camilo Lopez</td>
-          <td>camlo</td>
-          <td>19/01/2019</td>
-          <td>Cuarto usuario</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Collapsible Group Item #1
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Collapsible Group Item #2
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            Collapsible Group Item #3
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          <app-listado></app-listado>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
