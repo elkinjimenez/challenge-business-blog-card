@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css']
 })
-export class HomeComponent implements OnInit {
+export class MenuComponent implements OnInit {
 
   menu = { icono: 'far fa-times-circle', accionMenu: true };
 
@@ -26,8 +26,8 @@ export class HomeComponent implements OnInit {
 
   cerrarMenu() {
 
-    document.getElementById('mySidebar').style.width = '30px';
-    document.getElementById('main').style.marginLeft = '30px';
+    document.getElementById('mySidebar').style.width = '32.5px';
+    document.getElementById('main').style.marginLeft = '32.5px';
 
   }
 

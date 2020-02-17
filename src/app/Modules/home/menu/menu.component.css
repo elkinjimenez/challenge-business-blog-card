@@ -23,6 +23,12 @@
   color: #818181;
 }
 
+.sidebar .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 15px;
