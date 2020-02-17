@@ -1,8 +1,16 @@
-<div id="mySidebar" class="sidebar">
+<div id="mySidebar" class="sidebar text-white">
   <a class="closebtn" (click)="accionarMenu($event)">
     <i class="{{menu.icono}} fa-lg"></i>
   </a>
-  <a class="h5" href="#">Empleados</a>
-  <a class="h5" href="#">Horas extras</a>
-  <a class="h5" href="#">Proyectos</a>
+  <!-- EMPLEADOS -->
+  <a data-toggle="collapse" data-target="#menu-empleados" aria-expanded="false" aria-controls="menu-empleados"
+    class="h5">Empleados</a>
+  <div class="collapse" id="menu-empleados">
+    <a routerLink='home/empleados' class="h6 text-primary"><i class="fas fa-angle-right"></i> Lista de empleados</a>
+    <a routerLink='home/nuevo-empleado' class="h6 text-primary"><i class="fas fa-angle-right"></i> Nuevo empleado</a>
+    <a routerLink='home/carga-masiva' class="h6 text-primary"><i class="fas fa-angle-right"></i> Carga masiva</a>
+  </div>
+  <!-- HORAS EXTRAS -->
+  <a class="h5">Horas extras</a>
+  <a class="h5">Proyectos</a>
 </div>
