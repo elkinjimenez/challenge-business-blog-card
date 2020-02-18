@@ -37,7 +37,7 @@ export class EmpleadosComponent implements OnInit {
         detalle: 'Primero empleados',
 
       }
-    ];
+    ]
 
   }
 

@@ -4,19 +4,15 @@ import { EmpleadosComponent } from './empleados/empleados.component';
 import { NuevoComponent } from './nuevo/nuevo.component';
 import { HomeRoutingModule } from '../home-routing.module';
 import { CargaMasivaComponent } from './carga-masiva/carga-masiva.component';
-import { ListadoComponent } from './listado/listado.component';
 
 @NgModule({
-  declarations: [EmpleadosComponent, NuevoComponent, CargaMasivaComponent, ListadoComponent],
+  declarations: [EmpleadosComponent, NuevoComponent, CargaMasivaComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
   ],
   exports: [
-    EmpleadosComponent,
-    NuevoComponent,
-    CargaMasivaComponent,
-    ListadoComponent
+    EmpleadosComponent
   ]
 })
 export class EmpleadosModule { }
