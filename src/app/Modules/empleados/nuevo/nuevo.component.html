@@ -1,66 +1,51 @@
-<nav class="navbar navbar-light text-white shadow">
-  <h5>Nuevos empleados.</h5>
-</nav>
-<div class="container-fluid my-4">
-  <div class="d-flex justify-content-between mb-4">
-    <h5 class="font-weight-bold">Nuevo empleado.</h5>
-    <a routerLink='../carga-masiva' class="btn btn-primary">Carga masiva</a>
-  </div>
-  <div class="card">
-    <div class="card-header">
-      <h6>Digite los campos requeridos.</h6>
-    </div>
-    <div class="card-body">
-      <form action="" autocomplete="off">
-        <div class="row">
-          <div class="col md-6">
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Tipo de documento</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>C.C.</option>
-                <option>C.E.</option>
-                <option>NIT</option>
-                <option>Carnet diplomatico</option>
-                <option>Pasaporte</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="numerodocumento">Número de documento</label>
-              <input type="number" class="form-control" id="numerodocumento" placeholder="1234567890">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="nombres">Nombres</label>
-              <input type="text" class="form-control" id="nombres" placeholder="Omar Madrigal">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="usuario">Usuario</label>
-              <input type="text" class="form-control" id="usuario" placeholder="omar">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="fecha">Fecha ingreso</label>
-              <input type="date" class="form-control" id="fecha">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="detalle">Detalle</label>
-              <input type="text" class="form-control" id="detalle" placeholder="Usuario lider técnico">
-            </div>
-          </div>
-          <div class="col-md-12 text-right">
-            <a type="button" routerLink='../empleados' class="btn btn-danger btn-lg text-white mx-2">Cancelar</a>
-            <button class="btn btn-primary btn-lg">Crear empleado</button>
-          </div>
+<div class="m-3">
+  <form action="" autocomplete="off">
+    <div class="row">
+      <div class="col md-6">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Tipo de documento</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>C.C.</option>
+            <option>C.E.</option>
+            <option>NIT</option>
+            <option>Carnet diplomatico</option>
+            <option>Pasaporte</option>
+          </select>
         </div>
-      </form>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="numerodocumento">Número de documento</label>
+          <input type="number" class="form-control" id="numerodocumento" placeholder="1234567890">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="nombres">Nombres</label>
+          <input type="text" class="form-control" id="nombres" placeholder="Omar Madrigal">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="usuario">Usuario</label>
+          <input type="text" class="form-control" id="usuario" placeholder="omar">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="fecha">Fecha ingreso</label>
+          <input type="date" class="form-control" id="fecha">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="detalle">Detalle</label>
+          <input type="text" class="form-control" id="detalle" placeholder="Usuario lider técnico">
+        </div>
+      </div>
+      <div class="col-md-12 text-right">
+        <button class="btn btn-primary btn-lg">Crear empleado</button>
+      </div>
     </div>
-  </div>
+  </form>
 </div>
