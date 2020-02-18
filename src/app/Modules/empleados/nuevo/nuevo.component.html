@@ -13,22 +13,19 @@
     <div class="card-body">
       <form action="" autocomplete="off">
         <div class="row">
-          <div class="col md-6">
+          <div class="col-md-6">
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Tipo de documento</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>C.C.</option>
-                <option>C.E.</option>
-                <option>NIT</option>
-                <option>Carnet diplomatico</option>
-                <option>Pasaporte</option>
-              </select>
+              <label for="codigo">Código de empleado</label>
+              <input type="text" class="form-control" id="codigo" placeholder="jimenezelkg">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <label for="numerodocumento">Número de documento</label>
-              <input type="number" class="form-control" id="numerodocumento" placeholder="1234567890">
+              <label for="contrato">Tipo de contrato</label>
+              <select class="form-control" id="contrato">
+                <option value="" disabled>Seleccione</option>
+                <option>Directo</option>
+              </select>
             </div>
           </div>
           <div class="col-md-6">
@@ -39,8 +36,14 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <label for="usuario">Usuario</label>
-              <input type="text" class="form-control" id="usuario" placeholder="omar">
+              <label for="rol">Rol</label>
+              <select class="form-control" id="rol">
+                <option value="" disabled>Seleccione</option>
+                <option>Analista junior</option>
+                <option>Analista senior</option>
+                <option>Gerente</option>
+                <option>Analista senior</option>
+              </select>
             </div>
           </div>
           <div class="col-md-6">
@@ -51,12 +54,53 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="equipo">Equipo</label>
+              <input type="number" class="form-control" id="equipo" placeholder="850000">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="salariototal">Salario total</label>
+              <input type="number" class="form-control" id="salariototal" placeholder="3200000">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="salario">Salario</label>
+              <input type="number" class="form-control" id="salario" placeholder="3000000">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="beneficio">Beneficio</label>
+              <input type="number" class="form-control" id="beneficio" placeholder="900000">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="costoestandarmes">Costo estandar mes</label>
+              <input type="number" class="form-control" id="costoestandarmes" placeholder="1000000">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="numerodocumento">Número de documento</label>
+              <input type="number" class="form-control" id="numerodocumento" placeholder="1234567890">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="usuario">Usuario</label>
+              <input type="text" class="form-control" id="usuario" placeholder="omar">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
               <label for="detalle">Detalle</label>
               <input type="text" class="form-control" id="detalle" placeholder="Usuario lider técnico">
             </div>
           </div>
           <div class="col-md-12 text-right">
-            <a type="button" routerLink='../empleados' class="btn btn-danger btn-lg text-white mx-2">Cancelar</a>
             <button class="btn btn-primary btn-lg">Crear empleado</button>
           </div>
         </div>
