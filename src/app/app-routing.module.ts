@@ -6,6 +6,7 @@ import { EmpleadosComponent } from './Modules/empleados/empleados/empleados.comp
 import { NuevoComponent } from './Modules/empleados/nuevo/nuevo.component';
 import { CargaMasivaComponent } from './Modules/empleados/carga-masiva/carga-masiva.component';
 import { NovedadesComponent } from './Modules/empleados/novedades/novedades.component';
+import { OtrasNovedadesComponent } from './Modules/empleados/otras-novedades/otras-novedades.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'home/empleados/nuevo-empleado', component: NuevoComponent },
   { path: 'home/empleados/carga-masiva', component: CargaMasivaComponent },
   { path: 'home/empleados/novedades', component: NovedadesComponent },
+  { path: 'home/empleados/otras-nov', component: OtrasNovedadesComponent },
 ];
 
 @NgModule({
