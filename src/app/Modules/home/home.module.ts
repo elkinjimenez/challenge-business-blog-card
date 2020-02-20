@@ -6,9 +6,10 @@ import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
-  declarations: [LoginComponent, HomeComponent, MenuComponent, NavbarComponent],
+  declarations: [LoginComponent, HomeComponent, MenuComponent, NavbarComponent, LandingComponent],
   imports: [
     CommonModule,
     AppRoutingModule,
