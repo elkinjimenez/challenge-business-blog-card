@@ -26,8 +26,8 @@ export class MenuComponent implements OnInit {
 
   cerrarMenu() {
 
-    document.getElementById('mySidebar').style.width = '32.5px';
-    document.getElementById('main').style.marginLeft = '32.5px';
+    document.getElementById('mySidebar').style.width = '32.4px';
+    document.getElementById('main').style.marginLeft = '32.4px';
 
   }
 
