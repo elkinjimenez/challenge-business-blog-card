@@ -1,1 +1,63 @@
-<p>nuevo-proyecto works!</p>
+<div class="d-flex justify-content-between mb-4">
+  <h5 class="font-weight-bold">Nuevo proyecto.</h5>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card">
+      <div class="card-header">
+        <h6>Datos del proyecto.</h6>
+      </div>
+      <div class="card-body">
+        <form action="" autocomplete="off">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="codigoproyecto">Código del proyecto</label>
+                <input type="text" class="form-control" id="codigoproyecto" placeholder="54348">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="nombreproyecto">Nombre del proyecto</label>
+                <input type="text" class="form-control" id="nombreproyecto" placeholder="FABRICA BI AMDOCS">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="contrato">Cliente</label>
+                <select class="form-control" id="contrato">
+                  <option value="" disabled>Seleccione</option>
+                  <option>INTELISIS ASPEL SA DE CV</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="fechainicioproyecto">Fecha de inicio</label>
+                <input type="date" class="form-control" id="fechainicioproyecto">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="fechafinproyecto">Fecha de fin</label>
+                <input type="date" class="form-control" id="fechafinproyecto">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="duracionproyecto">Duración del proyecto</label>
+                <input type="number" class="form-control" id="duracionproyecto">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-right mt-4">
+        <a routerLink='/home/empleados' class="btn btn-danger btn-lg mx-2 text-white">Cancelar</a>
+        <button class="btn btn-primary btn-lg">Crear proyecto</button>
+      </div>
+    </div>
+  </div>
+</div>
