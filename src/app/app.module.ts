@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './Modules/home/home.module';
 import { EmpleadosModule } from './Modules/empleados/empleados.module';
 import { ProyectosModule } from './Modules/proyectos/proyectos.module';
+import { NovedadesModule } from './Modules/novedades/novedades.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProyectosModule } from './Modules/proyectos/proyectos.module';
     FormsModule,
     HomeModule,
     EmpleadosModule,
-    ProyectosModule
+    ProyectosModule,
+    NovedadesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

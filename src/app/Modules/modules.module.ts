@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { AppModule } from '../app.module';
 import { EmpleadosComponent } from './empleados/empleados/empleados.component';
 import { ProyectosComponent } from './proyectos/proyectos/proyectos.component';
+import { NovedadesComponent } from './novedades/novedades/novedades.component';
 
 
 @NgModule({
-  declarations: [EmpleadosComponent, ProyectosComponent],
+  declarations: [EmpleadosComponent, ProyectosComponent, NovedadesComponent],
   imports: [
     CommonModule,
     AppModule
