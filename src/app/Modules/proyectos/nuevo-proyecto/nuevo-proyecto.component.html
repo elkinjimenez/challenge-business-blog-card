@@ -24,8 +24,8 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="contrato">Cliente</label>
-                <select class="form-control" id="contrato">
+                <label for="cliente">Cliente</label>
+                <select class="form-control" id="cliente">
                   <option value="" disabled>Seleccione</option>
                   <option>INTELISIS ASPEL SA DE CV</option>
                 </select>
@@ -33,20 +33,44 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="fechainicioproyecto">Fecha de inicio</label>
-                <input type="date" class="form-control" id="fechainicioproyecto">
+                <label for="fechainicioproyecto">Fecha de inicio contractual</label>
+                <input (keyup)="restarFechas()" (change)="restarFechas()" [(ngModel)]="fechaInicio.fecha"
+                  name="fechaIncio" type="date" class="form-control" id="fechainicioproyecto">
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="fechafinproyecto">Fecha de fin</label>
-                <input type="date" class="form-control" id="fechafinproyecto">
+                <label for="fechafinproyecto">Fecha de fin contractual</label>
+                <input (keyup)="restarFechas()" (change)="restarFechas()" [(ngModel)]="fechaFin.fecha" name="fechaFin"
+                  type="date" class="form-control" id="fechafinproyecto">
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <label for="duracionproyecto">Duración del proyecto</label>
-                <input type="number" class="form-control" id="duracionproyecto">
+                <input [disabled]="!duracionProyecto.estado" [(ngModel)]="duracionProyecto.dias" name="duracionproyecto"
+                  type="text" class="form-control" id="duracionproyecto">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="servicioalcanve">Servicio / alcance</label>
+                <textarea class="form-control" id="servicioalcanve" rows="2"></textarea>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="contratooc">OC - Contrato</label>
+                <select class="form-control" id="contratooc">
+                  <option value="" disabled>Seleccione</option>
+                  <option>INTELISIS ASPEL SA DE CV</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="ncontrarooc">N° Contrato / OC</label>
+                <input type="text" class="form-control" id="ncontrarooc" placeholder="4500137750">
               </div>
             </div>
           </div>
