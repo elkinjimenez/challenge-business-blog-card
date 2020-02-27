@@ -2,21 +2,45 @@
   <a class="closebtn" (click)="accionarMenu($event)">
     <i class="{{menu.icono}} fa-lg"></i>
   </a>
-  <!-- EMPLEADOS -->
-  <a data-toggle="collapse" data-target="#menu-empleados" aria-expanded="false" aria-controls="menu-empleados" class="h5 pointer">Empleados</a>
-  <div class="collapse" id="menu-empleados">
-    <a routerLink='/home/empleados' class="h6 text-primary"><i class="fas fa-angle-right"></i> Lista de empleados</a>
-    <a routerLink='/home/empleados/nuevo' class="h6 text-primary"><i class="fas fa-angle-right"></i> Nuevo empleado</a>
-    <a routerLink='/home/empleados/carga-masiva' class="h6 text-primary"><i class="fas fa-angle-right"></i> Carga masiva</a>
-  </div>
-  <!-- NOVEDADES -->
-  <a data-toggle="collapse" data-target="#menu-novedades" aria-expanded="false" aria-controls="menu-novedades" class="h5 pointer">Novedades</a>
-  <div class="collapse" id="menu-novedades">
-    <a routerLink='/home/novedades/novedades' class="h6 text-primary"><i class="fas fa-angle-right"></i> Incapacidades y licencias</a>
-    <a routerLink='/home/novedades/otras-nov' class="h6 text-primary"><i class="fas fa-angle-right"></i> Otras novedades</a>
-  </div>
-  <a data-toggle="collapse" data-target="#menu-proyectos" aria-expanded="false" aria-controls="menu-proyectos" class="h5 pointer">Proyectos</a>
-  <div class="collapse" id="menu-proyectos">
-    <a routerLink='/home/proyectos/nuevo' class="h6 text-primary"><i class="fas fa-angle-right"></i> Nuevo proyecto</a>
+  <div class="accordion" id="accordion-menu">
+    <div id="cabecera-empleados">
+      <a class="h5 pointer" type="button" data-toggle="collapse" data-target="#item-empleados" aria-expanded="true"
+        aria-controls="item-empleados"> Empleados
+      </a>
+    </div>
+    <div id="item-empleados" class="collapse show" aria-labelledby="cabecera-empleados" data-parent="#accordion-menu">
+      <a routerLink='/home/empleados' class="h6 text-primary">
+        <i class="fas fa-angle-right"></i> Lista de empleados
+      </a>
+      <a routerLink='/home/empleados/nuevo' class="h6 text-primary">
+        <i class="fas fa-angle-right"></i> Nuevo empleado
+      </a>
+      <a routerLink='/home/empleados/carga-masiva' class="h6 text-primary">
+        <i class="fas fa-angle-right"></i> Carga masiva
+      </a>
+    </div>
+    <div id="cabecera-novedades">
+      <a class="h5 pointer collapsed" type="button" data-toggle="collapse" data-target="#item-novedades"
+        aria-expanded="false" aria-controls="item-novedades"> Novedades
+      </a>
+    </div>
+    <div id="item-novedades" class="collapse" aria-labelledby="cabecera-novedades" data-parent="#accordion-menu">
+      <a routerLink='/home/novedades/novedades' class="h6 text-primary">
+        <i class="fas fa-angle-right"></i> Incapacidades y licencias
+      </a>
+      <a routerLink='/home/novedades/otras-nov' class="h6 text-primary">
+        <i class="fas fa-angle-right"></i> Otras novedades
+      </a>
+    </div>
+    <div id="cabecera-proyectos">
+      <a class="h5 pointer collapsed" type="button" data-toggle="collapse" data-target="#item-proyectos"
+        aria-expanded="false" aria-controls="item-proyectos"> Proyectos
+      </a>
+    </div>
+    <div id="item-proyectos" class="collapse" aria-labelledby="cabecera-proyectos" data-parent="#accordion-menu">
+      <a routerLink='/home/proyectos/nuevo' class="h6 text-primary">
+        <i class="fas fa-angle-right"></i> Nuevo proyecto
+      </a>
+    </div>
   </div>
 </div>
