@@ -1,14 +1,14 @@
 <div class="d-flex justify-content-between mb-4">
   <h5 class="font-weight-bold">Nuevo proyecto.</h5>
 </div>
-<div class="card">
-  <div class="card-body">
-    <div class="card">
-      <div class="card-header">
-        <h6>Datos del proyecto.</h6>
-      </div>
-      <div class="card-body">
-        <form action="" autocomplete="off">
+<form action="" autocomplete="off">
+  <div class="card">
+    <div class="card-body">
+      <div class="card">
+        <div class="card-header">
+          <h6>Datos del proyecto.</h6>
+        </div>
+        <div class="card-body">
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
@@ -129,23 +129,79 @@
                 </select>
               </div>
             </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="codigosubproyecto">Subproyecto (Código del proyecto)</label>
+                <input type="text" class="form-control" id="codigosubproyecto" placeholder="54348">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="estadocontrato">Estado del contrato</label>
+                <select class="form-control" id="estadocontrato">
+                  <option value="" disabled>Seleccione</option>
+                  <option>Cerrado</option>
+                  <option>Sin contrato</option>
+                  <option>Liberado por operación</option>
+                  <option value="">Vigencia sin firmar</option>
+                </select>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-    </div>
-    <div class="card mt-4">
-      <div class="card-header">
-        <h6>Información operacional.</h6>
-      </div>
-      <div class="card-body">
 
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-right mt-4">
-        <a routerLink='/home/empleados' class="btn btn-danger btn-lg mx-2 text-white">Cancelar</a>
-        <button class="btn btn-primary btn-lg">Crear proyecto</button>
+      <!-- Información operacional. -->
+      <div class="card mt-4">
+        <div class="card-header">
+          <h6>Información operacional.</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="operacion">Operación</label>
+                <select class="form-control" id="operacion">
+                  <option value="" disabled>Seleccione</option>
+                  <option>OOCC</option>
+                  <option>CLARO</option>
+                  <option>ECUADOR</option>
+                  <option>HITSS</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="categoria">Categoría</label>
+                <select class="form-control" id="categoria">
+                  <option value="" disabled>Seleccione</option>
+                  <option>Costo Proyectos</option>
+                  <option>Costo de ventas</option>
+                  <option>Administración</option>
+                  <option>Ecuador</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Información operacional. -->
+      <div class="card mt-4">
+        <div class="card-header">
+          <h6>Información operacional.</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-right mt-4">
+          <a routerLink='/home/empleados' class="btn btn-danger btn-lg mx-2 text-white">Cancelar</a>
+          <button class="btn btn-primary btn-lg">Crear proyecto</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</form>
