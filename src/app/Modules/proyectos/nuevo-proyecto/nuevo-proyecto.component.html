@@ -258,13 +258,48 @@
             <div class="col-md-4">
               <div class="form-group">
                 <label for="costoplaneado">Costo planeado</label>
-                <input type="text" class="form-control" id="costoplaneado" placeholder="512214000">
+                <input type="text" class="form-control" id="costoplaneado" placeholder="1704266482">
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <label for="ftesplaneadospromedio">FTES Planeados (Promedio)</label>
-                <input type="text" class="form-control" id="ftesplaneadospromedio" placeholder="512214000">
+                <input type="text" class="form-control" id="ftesplaneadospromedio" placeholder="12">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="margenplaneadoproyecto">Margen planeado proyecto (Porcentaje)</label>
+                <input type="text" class="form-control" id="margenplaneadoproyecto" placeholder="50">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Stakeholders. -->
+      <div class="card mt-4">
+        <div class="card-header">
+          <h6>Stakeholders.</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="nombrestakeholder">Nombre</label>
+                <input type="text" class="form-control" id="nombrestakeholder" placeholder="Elkin Jimenez">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="telefonostakeholder">Teléfono</label>
+                <input type="text" maxlength="10" class="form-control" id="telefonostakeholder"
+                  placeholder="3158514199">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="correostakeholder">Correo</label>
+                <input type="email" class="form-control" id="correostakeholder" placeholder="elkin@ejemplo.com">
               </div>
             </div>
           </div>
@@ -281,6 +316,45 @@
           </div>
         </div>
       </div>
+      <!-- Comentarios. -->
+      <div class="card mt-4">
+        <div class="card-header">
+          <h6>Comentarios.</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="observaciones">Observaciones</label>
+                <textarea class="form-control" id="observaciones" rows="2"></textarea>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <textarea class="form-control" id="comentarios" rows="2"></textarea>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="comentariofacturacion">Comentarios facturación</label>
+                <textarea class="form-control" id="comentariofacturacion" rows="2"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Información operacional.
+      <div class="card mt-4">
+        <div class="card-header">
+          <h6>Información operacional.</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+
+          </div>
+        </div>
+      </div> -->
       <div class="row">
         <div class="col-md-12 text-right mt-4">
           <a routerLink='/home/empleados' class="btn btn-danger btn-lg mx-2 text-white">Cancelar</a>
