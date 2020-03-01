@@ -1,10 +1,19 @@
 export interface Empleado {
 
   codigo: number;
+  tipoContrato: string;
   documento: string;
+  rol: string;
   nombres: string;
-  usuario: string;
   fechaIngreso: string;
-  detalle: string;
+  equipo: string;
+  tipoSalario: string;
+  salarioTotal: string;
+  salario: string;
+  beneficio: string;
+  costoEstandarMes: string;
+  descuento: string;
+  novedad: string;
+  observaciones: string;
 
 }

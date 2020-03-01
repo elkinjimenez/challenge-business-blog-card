@@ -8,37 +8,12 @@ import { Empleado } from 'src/app/Model/empleados/empleado';
 })
 export class EmpleadosComponent implements OnInit {
 
-  empleado = {} as Empleado;
+  empleados: Empleado[] = [
 
-  empleados = [];
+  ]
 
   constructor() { }
 
-  ngOnInit() {
-
-    this.empleados = [
-      this.empleado = {
-
-        codigo: 1,
-        documento: '123453',
-        nombres: 'Elkin Jimenez',
-        usuario: 'ekn',
-        fechaIngreso: '09/01/2020',
-        detalle: 'Primero empleados',
-
-      },
-      this.empleado = {
-
-        codigo: 1,
-        documento: '123453',
-        nombres: 'Elkin Jimenez',
-        usuario: 'ekn',
-        fechaIngreso: '09/01/2020',
-        detalle: 'Primero empleados',
-
-      }
-    ]
-
-  }
+  ngOnInit() { }
 
 }
