@@ -8,6 +8,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { EditarEmpleadoComponent } from './editar-empleado/editar-empleado.component';
 import { CamposEmpleadoComponent } from './campos-empleado/campos-empleado.component';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   exports: [
     EmpleadosComponent

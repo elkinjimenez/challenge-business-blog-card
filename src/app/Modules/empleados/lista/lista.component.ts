@@ -42,7 +42,7 @@ export class ListaComponent implements OnInit {
         codigo: '2',
         tipoContrato: '1',
         documento: '435543',
-        rol: '2',
+        rol: '3',
         nombres: 'Omar Jiménez',
         fechaIngreso: '2019/12/09',
         equipo: 'NN',
