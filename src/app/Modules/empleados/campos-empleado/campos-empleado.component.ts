@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Empleado } from 'src/app/Model/empleados/empleado';
 
 @Component({
@@ -8,11 +8,16 @@ import { Empleado } from 'src/app/Model/empleados/empleado';
 })
 export class CamposEmpleadoComponent implements OnInit {
 
-  empleado = { tipoContrato: '', rol: '', tipoSalario: '', descuento: '' } as Empleado;
+  @Input() empleado: Empleado;
 
   constructor() { }
 
   ngOnInit() {
+
+    if (!this.empleado) {
+      this.empleado = { tipoContrato: '', rol: '', tipoSalario: '', descuento: '' } as Empleado;
+    }
+
   }
 
 }

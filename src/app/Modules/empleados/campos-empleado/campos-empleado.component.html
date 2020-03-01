@@ -12,6 +12,7 @@
       <select [(ngModel)]="empleado.tipoContrato" name="contrato" class="form-control" id="contrato">
         <option value="" disabled>Seleccione</option>
         <option value="1">Directo</option>
+        <option value="2">Indefinido</option>
       </select>
     </div>
   </div>
@@ -27,10 +28,10 @@
       <label for="rol">Rol</label>
       <select [(ngModel)]="empleado.rol" name="rol" class="form-control" id="rol">
         <option value="" disabled>Seleccione</option>
-        <option>Analista junior</option>
-        <option>Analista senior</option>
-        <option>Gerente</option>
-        <option>Analista senior</option>
+        <option value="1">Analista junior</option>
+        <option value="2">Analista senior</option>
+        <option value="3">Gerente</option>
+        <option value="4">Analista senior</option>
       </select>
     </div>
   </div>
@@ -57,8 +58,8 @@
       <label for="tiposalario">Tipo de salario</label>
       <select [(ngModel)]="empleado.tipoSalario" class="form-control" id="tiposalario">
         <option value="" disabled>Seleccione</option>
-        <option>Menor a 10 SMLV</option>
-        <option>Integral</option>
+        <option value="1">Menor a 10 SMLV</option>
+        <option value="2">Integral</option>
       </select>
     </div>
   </div>
@@ -93,8 +94,8 @@
       <label for="descuento">Descuento</label>
       <select [(ngModel)]="empleado.descuento" class="form-control" id="descuento">
         <option value="" disabled>Seleccione</option>
-        <option>Verdadero</option>
-        <option>Falso</option>
+        <option value="1">Verdadero</option>
+        <option value="2">Falso</option>
       </select>
     </div>
   </div>
