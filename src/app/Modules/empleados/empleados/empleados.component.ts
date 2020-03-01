@@ -8,10 +8,6 @@ import { Empleado } from 'src/app/Model/empleados/empleado';
 })
 export class EmpleadosComponent implements OnInit {
 
-  empleados: Empleado[] = [
-
-  ]
-
   constructor() { }
 
   ngOnInit() { }
