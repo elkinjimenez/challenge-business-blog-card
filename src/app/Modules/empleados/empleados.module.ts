@@ -5,9 +5,11 @@ import { NuevoComponent } from './nuevo/nuevo.component';
 import { CargaMasivaComponent } from './carga-masiva/carga-masiva.component';
 import { ListaComponent } from './lista/lista.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { EditarEmpleadoComponent } from './editar-empleado/editar-empleado.component';
+import { CamposEmpleadoComponent } from './campos-empleado/campos-empleado.component';
 
 @NgModule({
-  declarations: [EmpleadosComponent, NuevoComponent, CargaMasivaComponent, ListaComponent],
+  declarations: [EmpleadosComponent, NuevoComponent, CargaMasivaComponent, ListaComponent, EditarEmpleadoComponent, CamposEmpleadoComponent],
   imports: [
     CommonModule,
     AppRoutingModule
