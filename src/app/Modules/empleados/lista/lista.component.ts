@@ -8,7 +8,7 @@ import { Empleado } from 'src/app/Model/empleados/empleado';
 })
 export class ListaComponent implements OnInit {
 
-  empleados = [] as Empleado [];
+  empleados = [] as Empleado[];
 
   constructor() { }
 
@@ -20,7 +20,7 @@ export class ListaComponent implements OnInit {
     let empleado = {} as Empleado;
     this.empleados = [
       empleado = {
-        codigo: 1,
+        codigo: '1',
         tipoContrato: 'indefinico',
         documento: '2345345',
         rol: 'Desarrollador',
@@ -37,7 +37,7 @@ export class ListaComponent implements OnInit {
         observaciones: 'Ninguna',
       },
       empleado = {
-        codigo: 2,
+        codigo: '2',
         tipoContrato: 'indefinico',
         documento: '435543',
         rol: 'Desarrollador',

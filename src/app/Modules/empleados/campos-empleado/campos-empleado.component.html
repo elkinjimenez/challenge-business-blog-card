@@ -2,28 +2,30 @@
   <div class="col-md-4">
     <div class="form-group">
       <label for="codigo">Código de empleado</label>
-      <input type="text" class="form-control" id="codigo" placeholder="jimenezelkg">
+      <input [(ngModel)]="empleado.codigo" type="text" name="codigo" class="form-control" id="codigo"
+        placeholder="jimenezelkg">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="contrato">Tipo de contrato</label>
-      <select class="form-control" id="contrato">
+      <select [(ngModel)]="empleado.tipoContrato" name="contrato" class="form-control" id="contrato">
         <option value="" disabled>Seleccione</option>
-        <option>Directo</option>
+        <option value="1">Directo</option>
       </select>
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="numerodocumento">Número de documento</label>
-      <input type="number" class="form-control" id="numerodocumento" placeholder="1234567890">
+      <input [(ngModel)]="empleado.documento" type="text" name="numerodocumento" class="form-control"
+        id="numerodocumento" placeholder="1234567890">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="rol">Rol</label>
-      <select class="form-control" id="rol">
+      <select [(ngModel)]="empleado.rol" name="rol" class="form-control" id="rol">
         <option value="" disabled>Seleccione</option>
         <option>Analista junior</option>
         <option>Analista senior</option>
@@ -35,25 +37,25 @@
   <div class="col-md-4">
     <div class="form-group">
       <label for="nombres">Nombres</label>
-      <input type="text" class="form-control" id="nombres" placeholder="Omar Madrigal">
+      <input [(ngModel)]="empleado.nombres" type="text" class="form-control" id="nombres" placeholder="Omar Madrigal">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="fecha">Fecha ingreso</label>
-      <input type="date" class="form-control" id="fecha">
+      <input [(ngModel)]="empleado.fechaIngreso" type="date" class="form-control" id="fecha">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="equipo">Equipo</label>
-      <input type="number" class="form-control" id="equipo" placeholder="850000">
+      <input [(ngModel)]="empleado.equipo" type="number" class="form-control" id="equipo" placeholder="850000">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="tiposalario">Tipo de salario</label>
-      <select class="form-control" id="tiposalario">
+      <select [(ngModel)]="empleado.tipoSalario" class="form-control" id="tiposalario">
         <option value="" disabled>Seleccione</option>
         <option>Menor a 10 SMLV</option>
         <option>Integral</option>
@@ -63,31 +65,33 @@
   <div class="col-md-4">
     <div class="form-group">
       <label for="salariototal">Salario total</label>
-      <input type="number" class="form-control" id="salariototal" placeholder="3200000">
+      <input [(ngModel)]="empleado.salarioTotal" type="number" class="form-control" id="salariototal"
+        placeholder="3200000">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="salario">Salario</label>
-      <input type="number" class="form-control" id="salario" placeholder="3000000">
+      <input [(ngModel)]="empleado.salario" type="number" class="form-control" id="salario" placeholder="3000000">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="beneficio">Beneficio</label>
-      <input type="number" class="form-control" id="beneficio" placeholder="900000">
+      <input [(ngModel)]="empleado.beneficio" type="number" class="form-control" id="beneficio" placeholder="900000">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="costoestandarmes">Costo estandar mes</label>
-      <input type="number" class="form-control" id="costoestandarmes" placeholder="1000000">
+      <input [(ngModel)]="empleado.costoEstandarMes" type="number" class="form-control" id="costoestandarmes"
+        placeholder="1000000">
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="descuento">Descuento</label>
-      <select class="form-control" id="descuento">
+      <select [(ngModel)]="empleado.descuento" class="form-control" id="descuento">
         <option value="" disabled>Seleccione</option>
         <option>Verdadero</option>
         <option>Falso</option>
@@ -97,13 +101,13 @@
   <div class="col-md-4">
     <div class="form-group">
       <label for="novedad">Novedad</label>
-      <textarea class="form-control" id="novedad" rows="1"></textarea>
+      <textarea [(ngModel)]="empleado.novedad" class="form-control" id="novedad" rows="1"></textarea>
     </div>
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <label for="observaciones">Observaciones</label>
-      <textarea class="form-control" id="observaciones" rows="1"></textarea>
+      <textarea [(ngModel)]="empleado.observaciones" class="form-control" id="observaciones" rows="1"></textarea>
     </div>
   </div>
 </div>

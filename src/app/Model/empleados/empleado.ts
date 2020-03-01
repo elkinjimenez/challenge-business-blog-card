@@ -1,6 +1,6 @@
 export interface Empleado {
 
-  codigo: number;
+  codigo: string;
   tipoContrato: string;
   documento: string;
   rol: string;
