@@ -8,6 +8,7 @@ import { OtrasNovedadesComponent } from './Modules/novedades/otras-novedades/otr
 import { LandingComponent } from './Modules/home/landing/landing.component';
 import { NuevoProyectoComponent } from './Modules/proyectos/nuevo-proyecto/nuevo-proyecto.component';
 import { IncapacidadesComponent } from './Modules/novedades/incapacidades/incapacidades.component';
+import { ListaProyectosComponent } from './Modules/proyectos/lista-proyectos/lista-proyectos.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'home/empleados/carga-masiva', component: CargaMasivaComponent },
   { path: 'home/novedades/novedades', component: IncapacidadesComponent },
   { path: 'home/novedades/otras-nov', component: OtrasNovedadesComponent },
+  { path: 'home/proyectos/lista', component: ListaProyectosComponent },
   { path: 'home/proyectos/nuevo', component: NuevoProyectoComponent },
 ];
 
