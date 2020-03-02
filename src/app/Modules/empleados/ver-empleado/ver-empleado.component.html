@@ -8,17 +8,49 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header bg-primary text-white">
-                <h5 class="font-weight-bold">Perfil del empleado.</h5>
+        <div class="p-4">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                  <h5>Perfil del empleado.</h5>
+                </div>
+                <div class="card-body text-center">
+                  <i class="far fa-user-circle fa-8x mb-4 text-primary"></i>
+                  <div class="d-flex justify-content-between">
+                    <h5>{{empleado.nombres}}</h5>
+                    <h5>Cod. empleado: {{empleado.codigo}}</h5>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h5>Número de documento:</h5>
+                    <h5>{{empleado.documento}}</h5>
+                  </div>
+                </div>
               </div>
-              <div class="card-body text-center">
-                <i class="far fa-user-circle fa-5x"></i>
-                <div class="d-flex justify-content-between my-5">
-                  <h5>{{empleado.nombres}}</h5>
-                  <h5>Cod. empleado: {{empleado.codigo}}</h5>
+            </div>
+            <div class="col-md-6">
+              <div class="card shadow">
+                <div class="card-header">
+                  <h5>Datos del salario.</h5>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h6>Salario:</h6>
+                    <h6>{{empleado.salario}}</h6>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h6>Beneficio:</h6>
+                    <h6>{{empleado.beneficio}}</h6>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h6>Costo estandar mes:</h6>
+                    <h6>{{empleado.costoEstandarMes}}</h6>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <h6>Salario Total:</h6>
+                    <h6>{{empleado.salarioTotal}}</h6>
+                  </div>
                 </div>
               </div>
             </div>
