@@ -1,0 +1,349 @@
+<div class="card">
+  <div class="card-header">
+    <h6>Datos del proyecto.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="codigoproyecto">Código del proyecto</label>
+          <input type="text" class="form-control" id="codigoproyecto" placeholder="54348">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="nombreproyecto">Nombre del proyecto</label>
+          <input type="text" class="form-control" id="nombreproyecto" placeholder="FABRICA BI AMDOCS">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="cliente">Cliente</label>
+          <select class="form-control" id="cliente">
+            <option value="" disabled>Seleccione</option>
+            <option>INTELISIS ASPEL SA DE CV</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="fechainicioproyecto">Fecha de inicio contractual</label>
+          <input (keyup)="restarFechas()" (change)="restarFechas()" [(ngModel)]="fechaInicio.fecha" name="fechaIncio"
+            type="date" class="form-control" id="fechainicioproyecto">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="fechafinproyecto">Fecha de fin contractual</label>
+          <input (keyup)="restarFechas()" (change)="restarFechas()" [(ngModel)]="fechaFin.fecha" name="fechaFin"
+            type="date" class="form-control" id="fechafinproyecto">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="duracionproyecto">Duración del proyecto</label>
+          <input [disabled]="!duracionProyecto.estado" [(ngModel)]="duracionProyecto.dias" name="duracionproyecto"
+            type="text" class="form-control" id="duracionproyecto">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="servicioalcanve">Servicio / alcance</label>
+          <textarea class="form-control" id="servicioalcanve" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="contratooc">OC - Contrato</label>
+          <select class="form-control" id="contratooc">
+            <option value="" disabled>Seleccione</option>
+            <option>INTELISIS ASPEL SA DE CV</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="ncontrarooc">N° Contrato / OC</label>
+          <input type="text" class="form-control" id="ncontrarooc" placeholder="4500137750">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="moneda">Moneda</label>
+          <select class="form-control" id="moneda">
+            <option value="" disabled>Seleccione</option>
+            <option>USD</option>
+            <option>Cops</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="valortotaladjudicado">Valor total adjudicado</label>
+          <input type="text" class="form-control" id="valortotaladjudicado" placeholder="512214000">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="valorformalizadohost">Valor formalizado en HOST</label>
+          <input type="text" class="form-control" id="valorformalizadohost" placeholder="512214000">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="valorultimocontrato">Valor último contrato u OC</label>
+          <input type="text" class="form-control" id="valorultimocontrato" placeholder="47100000">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="tipotarifa">Tipo de tarifa</label>
+          <select class="form-control" id="tipotarifa">
+            <option value="" disabled>Seleccione</option>
+            <option>Hora</option>
+            <option>Mes</option>
+            <option>Entregables</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="tarifa">Tarifa</label>
+          <input type="text" class="form-control" id="tarifa" placeholder="44500">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="estadoproyecto">Estado del proyecto</label>
+          <select class="form-control" id="estadoproyecto">
+            <option value="" disabled>Seleccione</option>
+            <option>Activo</option>
+            <option>Cerrado</option>
+            <option>Liberado por operaciones</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="codigosubproyecto">Subproyecto (Código del proyecto)</label>
+          <input type="text" class="form-control" id="codigosubproyecto" placeholder="54348">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="estadocontrato">Estado del contrato</label>
+          <select class="form-control" id="estadocontrato">
+            <option value="" disabled>Seleccione</option>
+            <option>Cerrado</option>
+            <option>Sin contrato</option>
+            <option>Liberado por operación</option>
+            <option value="">Vigencia sin firmar</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Información operacional. -->
+<div class="card mt-4">
+  <div class="card-header">
+    <h6>Información operacional.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="operacion">Operación</label>
+          <select class="form-control" id="operacion">
+            <option value="" disabled>Seleccione</option>
+            <option>OOCC</option>
+            <option>CLARO</option>
+            <option>ECUADOR</option>
+            <option>HITSS</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="categoria">Categoría</label>
+          <select class="form-control" id="categoria">
+            <option value="" disabled>Seleccione</option>
+            <option>Costo Proyectos</option>
+            <option>Costo de ventas</option>
+            <option>Administración</option>
+            <option>Ecuador</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <input type="text" class="form-control" id="direccion" placeholder="Centro de desarrollo de software">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="lineanegocio">Línea de negocio</label>
+          <select class="form-control" id="lineanegocio">
+            <option value="" disabled>Seleccione</option>
+            <option>Consultoría de sistemas</option>
+            <option>Fábrica de desarrollo de software</option>
+            <option>Integración de soluciones</option>
+            <option>Servicios y productos de tecnología</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="director">Director</label>
+          <select class="form-control" id="director">
+            <option value="" disabled>Seleccione</option>
+            <option>Gonzalo Montes</option>
+            <option>Sandra Serrano</option>
+            <option>Jose Lisandro Perez</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="gerente">Gerente</label>
+          <select class="form-control" id="gerente">
+            <option value="" disabled>Seleccione</option>
+            <option>Oscar Carvajal</option>
+            <option>Miguel Ortiz/option>
+            <option>Omar Castellanos</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Control financiero. -->
+<div class="card mt-4">
+  <div class="card-header">
+    <h6>Control financiero.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="fechainiciocontrolfinanciero">Fecha de inicio</label>
+          <input name="fechainiciocontrolfinanciero" type="date" class="form-control" id="fechainiciocontrolfinanciero">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="fechafincontrolfinanciero">Fecha de fin</label>
+          <input name="fechafincontrolfinanciero" type="date" class="form-control" id="fechafincontrolfinanciero">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Plan de negocio. -->
+<div class="card mt-4">
+  <div class="card-header">
+    <h6>Plan de negocio.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="costoplaneado">Costo planeado</label>
+          <input type="text" class="form-control" id="costoplaneado" placeholder="1704266482">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="ftesplaneadospromedio">FTES Planeados (Promedio)</label>
+          <input type="text" class="form-control" id="ftesplaneadospromedio" placeholder="12">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="margenplaneadoproyecto">Margen planeado proyecto (Porcentaje)</label>
+          <input type="text" class="form-control" id="margenplaneadoproyecto" placeholder="50">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Stakeholders. -->
+<div class="card mt-4">
+  <div class="card-header">
+    <h6>Stakeholders.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="nombrestakeholder">Nombre</label>
+          <input type="text" class="form-control" id="nombrestakeholder" placeholder="Elkin Jimenez">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="telefonostakeholder">Teléfono</label>
+          <input type="text" maxlength="10" class="form-control" id="telefonostakeholder" placeholder="3158514199">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="correostakeholder">Correo</label>
+          <input type="email" class="form-control" id="correostakeholder" placeholder="elkin@ejemplo.com">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Información operacional. -->
+<div class="card mt-4">
+  <div class="card-header">
+    <h6>Información operacional.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+<!-- Comentarios. -->
+<div class="card mt-4">
+  <div class="card-header">
+    <h6>Comentarios.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="observaciones">Observaciones</label>
+          <textarea class="form-control" id="observaciones" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="comentarios">Comentarios</label>
+          <textarea class="form-control" id="comentarios" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="comentariofacturacion">Comentarios facturación</label>
+          <textarea class="form-control" id="comentariofacturacion" rows="2"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Siguientes campos. -->
+<div class="card mt-4">
+  <div class="card-header">
+    <h6>Siguientes campos.</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+
+    </div>
+  </div>
+</div>

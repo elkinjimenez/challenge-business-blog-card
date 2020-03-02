@@ -5,9 +5,10 @@ import { NuevoProyectoComponent } from './nuevo-proyecto/nuevo-proyecto.componen
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ListaProyectosComponent } from './lista-proyectos/lista-proyectos.component';
+import { CamposProyectoComponent } from './campos-proyecto/campos-proyecto.component';
 
 @NgModule({
-  declarations: [ProyectosComponent, NuevoProyectoComponent, ListaProyectosComponent],
+  declarations: [ProyectosComponent, NuevoProyectoComponent, ListaProyectosComponent, CamposProyectoComponent],
   imports: [
     CommonModule,
     FormsModule,
