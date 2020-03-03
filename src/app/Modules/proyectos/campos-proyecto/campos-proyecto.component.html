@@ -7,57 +7,58 @@
       <div class="col-md-4">
         <div class="form-group">
           <label for="codigoproyecto">Código del proyecto</label>
-          <input type="text" class="form-control" id="codigoproyecto" placeholder="54348">
+          <input [(ngModel)]="proyecto.codigo" type="text" class="form-control" id="codigoproyecto" placeholder="54348">
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="nombreproyecto">Nombre del proyecto</label>
-          <input type="text" class="form-control" id="nombreproyecto" placeholder="FABRICA BI AMDOCS">
+          <input [(ngModel)]="proyecto.nombre" type="text" class="form-control" id="nombreproyecto"
+            placeholder="FABRICA BI AMDOCS">
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="cliente">Cliente</label>
-          <select class="form-control" id="cliente">
+          <select [(ngModel)]="proyecto.cliente" class="form-control" id="cliente">
             <option value="" disabled>Seleccione</option>
-            <option>INTELISIS ASPEL SA DE CV</option>
+            <option value="1">INTELISIS ASPEL SA DE CV</option>
           </select>
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="fechainicioproyecto">Fecha de inicio contractual</label>
-          <input (keyup)="restarFechas()" (change)="restarFechas()" [(ngModel)]="fechaInicio.fecha" name="fechaIncio"
-            type="date" class="form-control" id="fechainicioproyecto">
+          <input [(ngModel)]="proyecto.fechaInicioContractual" (keyup)="restarFechas()" (change)="restarFechas()"
+            name="fechaIncio" type="date" class="form-control" id="fechainicioproyecto">
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="fechafinproyecto">Fecha de fin contractual</label>
-          <input (keyup)="restarFechas()" (change)="restarFechas()" [(ngModel)]="fechaFin.fecha" name="fechaFin"
-            type="date" class="form-control" id="fechafinproyecto">
+          <input [(ngModel)]="proyecto.fehchaFinContractual" (keyup)="restarFechas()" (change)="restarFechas()"
+            name="fechaFin" type="date" class="form-control" id="fechafinproyecto">
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="duracionproyecto">Duración del proyecto</label>
-          <input [disabled]="!duracionProyecto.estado" [(ngModel)]="duracionProyecto.dias" name="duracionproyecto"
-            type="text" class="form-control" id="duracionproyecto">
+          <input disabled [(ngModel)]="proyecto.duracionProyecto" name="duracionproyecto" type="text"
+            class="form-control" id="duracionproyecto">
         </div>
       </div>
       <div class="col-md-12">
         <div class="form-group">
           <label for="servicioalcanve">Servicio / alcance</label>
-          <textarea class="form-control" id="servicioalcanve" rows="2"></textarea>
+          <textarea [(ngModel)]="proyecto.servicioAlcance" class="form-control" id="servicioalcanve" rows="2"></textarea>
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="contratooc">OC - Contrato</label>
-          <select class="form-control" id="contratooc">
+          <select [(ngModel)]="proyecto.ocContrato" class="form-control" id="contratooc">
             <option value="" disabled>Seleccione</option>
-            <option>INTELISIS ASPEL SA DE CV</option>
+            <option value="1">INTELISIS ASPEL SA DE CV</option>
           </select>
         </div>
       </div>

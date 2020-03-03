@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Proyecto } from 'src/app/Model/proyectos/proyecto';
 
 @Component({
   selector: 'app-campos-proyecto',
@@ -7,21 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CamposProyectoComponent implements OnInit {
 
-  fechaInicio = { fecha: '', mensaje: '', color: '', estado: false };
-  fechaFin = { fecha: '', mensaje: '', color: '', estado: false };
-  duracionProyecto = { numero: 0, dias: '0', mensaje: '', color: '', estado: false };
+  @Input() proyecto: Proyecto;
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    if (!this.proyecto) {
+      this.proyecto = { cliente: '', ocContrato: '' } as Proyecto;
+    }
+  }
 
   restarFechas() {
-    if (this.fechaFin.fecha !== '' && this.fechaInicio.fecha !== '') {
-      const fechaI = new Date(this.fechaInicio.fecha).getTime();
-      const fechaF = new Date(this.fechaFin.fecha).getTime();
+    if (this.proyecto.fechaInicioContractual !== '' && this.proyecto.fehchaFinContractual !== '') {
+      const fechaI = new Date(this.proyecto.fechaInicioContractual).getTime();
+      const fechaF = new Date(this.proyecto.fehchaFinContractual).getTime();
       const dias = (fechaF - fechaI) / (1000 * 60 * 60 * 24);
-      this.duracionProyecto.numero = dias;
-      this.duracionProyecto.dias = dias + ' días.';
+      this.proyecto.duracionProyecto = dias + '';
     }
   }
 
