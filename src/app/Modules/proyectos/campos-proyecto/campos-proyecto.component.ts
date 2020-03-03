@@ -14,7 +14,7 @@ export class CamposProyectoComponent implements OnInit {
 
   ngOnInit() {
     if (!this.proyecto) {
-      this.proyecto = { cliente: '', ocContrato: '' } as Proyecto;
+      this.proyecto = { cliente: '', ocContrato: '', tipoTarifa: '', estadoProyecto: '', estadoContrato: '' } as Proyecto;
     }
   }
 
