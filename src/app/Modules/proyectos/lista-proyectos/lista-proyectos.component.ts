@@ -15,6 +15,7 @@ export class ListaProyectosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.listaProyectos();
   }
 
   listaProyectos() {
