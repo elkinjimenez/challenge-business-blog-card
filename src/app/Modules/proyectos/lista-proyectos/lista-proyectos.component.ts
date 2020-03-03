@@ -8,6 +8,8 @@ import { Proyecto } from 'src/app/Model/proyectos/proyecto';
 })
 export class ListaProyectosComponent implements OnInit {
 
+  proyectoSeleccionado: Proyecto;
+
   proyectos = [] as Proyecto[];
 
   constructor() { }
@@ -43,8 +45,8 @@ export class ListaProyectosComponent implements OnInit {
 
   }
 
-  verProyecto() {
-
+  verProyecto(p: Proyecto): void {
+    this.proyectoSeleccionado = p;
   }
 
 }

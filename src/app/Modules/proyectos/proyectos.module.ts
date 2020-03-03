@@ -7,9 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { ListaProyectosComponent } from './lista-proyectos/lista-proyectos.component';
 import { CamposProyectoComponent } from './campos-proyecto/campos-proyecto.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EditarProyectoComponent } from './editar-proyecto/editar-proyecto.component';
 
 @NgModule({
-  declarations: [ProyectosComponent, NuevoProyectoComponent, ListaProyectosComponent, CamposProyectoComponent],
+  declarations: [ProyectosComponent, NuevoProyectoComponent, ListaProyectosComponent, CamposProyectoComponent, EditarProyectoComponent],
   imports: [
     CommonModule,
     FormsModule,
