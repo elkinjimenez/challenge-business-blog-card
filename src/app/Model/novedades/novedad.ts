@@ -10,4 +10,6 @@ export interface Novedad {
 
   numeroDiasHabiles: number;
 
+  razon: string;
+
 }

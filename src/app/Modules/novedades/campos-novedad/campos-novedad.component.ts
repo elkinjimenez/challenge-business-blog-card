@@ -14,7 +14,7 @@ export class CamposNovedadComponent implements OnInit {
 
   ngOnInit() {
     if (!this.novedad) {
-      this.novedad = { tipoNovedad: '' } as Novedad;
+      this.novedad = { tipoNovedad: '', razon: '' } as Novedad;
     }
   }
 

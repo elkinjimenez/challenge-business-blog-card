@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-md-4">
     <div class="form-group">
-      <label for="contrato">Tipo de novedad</label>
-      <select [(ngModel)]="novedad.tipoNovedad" name="contrato" class="form-control" id="contrato">
+      <label for="tiponovedad">Tipo de novedad</label>
+      <select [(ngModel)]="novedad.tipoNovedad" name="tiponovedad" class="form-control" id="tiponovedad">
         <option value="" disabled>Seleccione</option>
         <option value="1">Bonos</option>
         <option value="2">Horas extras</option>
@@ -27,18 +27,34 @@
         id="codigoempleado" placeholder="10048278">
     </div>
   </div>
+  <div class="col-md-4" *ngIf="novedad.tipoNovedad==='4'">
+    <div class="form-group">
+      <label for="razonlicencia">Razón</label>
+      <select [(ngModel)]="novedad.razon" name="razonlicencia" class="form-control" id="razonlicencia">
+        <option value="" disabled>Seleccione</option>
+        <option value="1">Enfermedad General Medica (EGM)</option>
+        <option value="2">Licencia de Maternidad (LM)</option>
+        <option value="3">Accidente de Trabajo o Enfermedad Profesional (ATEP)</option>
+        <option value="4">Licencia Remunerada (LR)</option>
+        <option value="5">Licencia No Remunerada (LNR)</option>
+        <option value="6">LUTO</option>
+        <option value="6">PATERNIDAD</option>
+        <option value="6">SANCIONES</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-4" *ngIf="novedad.tipoNovedad==='3' || novedad.tipoNovedad==='4'">
+    <div class="form-group">
+      <label for="numerodiashabiles">Número días hábiles</label>
+      <input [(ngModel)]="novedad.numeroDiasHabiles" type="number" name="numerodiashabiles" class="form-control"
+        id="numerodiashabiles" placeholder="4">
+    </div>
+  </div>
   <div class="col-md-4" *ngIf="novedad.tipoNovedad!=='3'">
     <div class="form-group">
       <label for="valor">Valor</label>
       <input [(ngModel)]="novedad.valor" type="number" name="valor" class="form-control" id="valor"
         placeholder="100000">
-    </div>
-  </div>
-  <div class="col-md-4" *ngIf="novedad.tipoNovedad==='3'">
-    <div class="form-group">
-      <label for="numerodiashabiles">Número días hábiles</label>
-      <input [(ngModel)]="novedad.numeroDiasHabiles" type="number" name="numerodiashabiles" class="form-control"
-        id="numerodiashabiles" placeholder="4">
     </div>
   </div>
   <div class="col-md-4" *ngIf="novedad.tipoNovedad=='1' || novedad.tipoNovedad=='2'">
