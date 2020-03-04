@@ -5,12 +5,15 @@ import { IncapacidadesComponent } from './incapacidades/incapacidades.component'
 import { OtrasNovedadesComponent } from './otras-novedades/otras-novedades.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { NuevaNovedadComponent } from './nueva-novedad/nueva-novedad.component';
+import { CamposNovedadComponent } from './campos-novedad/campos-novedad.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [NovedadesComponent, IncapacidadesComponent, OtrasNovedadesComponent, NuevaNovedadComponent],
+  declarations: [NovedadesComponent, IncapacidadesComponent, OtrasNovedadesComponent, NuevaNovedadComponent, CamposNovedadComponent],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   exports: [
     NovedadesComponent
