@@ -9,16 +9,21 @@ import { LandingComponent } from './Modules/home/landing/landing.component';
 import { NuevoProyectoComponent } from './Modules/proyectos/nuevo-proyecto/nuevo-proyecto.component';
 import { IncapacidadesComponent } from './Modules/novedades/incapacidades/incapacidades.component';
 import { ListaProyectosComponent } from './Modules/proyectos/lista-proyectos/lista-proyectos.component';
+import { NuevaNovedadComponent } from './Modules/novedades/nueva-novedad/nueva-novedad.component';
 
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'home', component: HomeComponent },
+  // EMPLEADOS
   { path: 'home/empleados', component: EmpleadosComponent },
   { path: 'home/empleados/nuevo', component: NuevoComponent },
   { path: 'home/empleados/carga-masiva', component: CargaMasivaComponent },
+  // NOVEDADES
+  { path: 'home/novedades/nueva', component: NuevaNovedadComponent },
   { path: 'home/novedades/novedades', component: IncapacidadesComponent },
   { path: 'home/novedades/otras-nov', component: OtrasNovedadesComponent },
+  // PROYECTOS
   { path: 'home/proyectos/lista', component: ListaProyectosComponent },
   { path: 'home/proyectos/nuevo', component: NuevoProyectoComponent },
 ];
