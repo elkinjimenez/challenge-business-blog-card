@@ -12,6 +12,7 @@ export class CamposProyectoComponent implements OnInit {
   @Input() proyecto: Proyecto;
   Clientes = [] as Cliente[];
   Monedas = [{ id: '', nombre: '' }];
+  TipoTarifa = [{ id: '', nombre: '' }];
 
   constructor() { }
 
@@ -23,6 +24,7 @@ export class CamposProyectoComponent implements OnInit {
     // PARA LOS SELECTS
     this.listarClientes();
     this.listarMonedas();
+    this.listarTiposTarifa();
   }
 
   restarFechas() {
@@ -51,6 +53,17 @@ export class CamposProyectoComponent implements OnInit {
       { id: '2', nombre: 'USD' },
       { id: '3', nombre: 'MXN' },
       { id: '4', nombre: 'EUR' },
+    ];
+  }
+
+  listarTiposTarifa() {
+    this.TipoTarifa = [
+      { id: '1', nombre: 'Hora' },
+      { id: '2', nombre: 'Mensual' },
+      { id: '3', nombre: 'Rol' },
+      { id: '4', nombre: 'Entregables' },
+      { id: '5', nombre: 'Células' },
+      { id: '6', nombre: 'Precios fijos' },
     ]
   }
 

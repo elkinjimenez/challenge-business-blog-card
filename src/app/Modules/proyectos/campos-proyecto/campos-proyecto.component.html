@@ -82,15 +82,15 @@
       <div class="col-md-4">
         <div class="form-group">
           <label for="valortotaladjudicado">Valor total adjudicado</label>
-          <input [(ngModel)]="proyecto.valorTotalAdjudicado" type="text" class="form-control" id="valortotaladjudicado"
-            placeholder="512214000">
+          <input [(ngModel)]="proyecto.valorTotalAdjudicado" type="number" class="form-control"
+            id="valortotaladjudicado" placeholder="512214000">
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
           <label for="valorformalizadohost">Valor formalizado en HOST</label>
-          <input [(ngModel)]="proyecto.valorFormalizadoHost" type="text" class="form-control" id="valorformalizadohost"
-            placeholder="512214000">
+          <input [(ngModel)]="proyecto.valorFormalizadoHost" type="number" class="form-control"
+            id="valorformalizadohost" placeholder="512214000">
         </div>
       </div>
       <div class="col-md-4">
@@ -98,6 +98,7 @@
           <label for="valorultimocontrato">Valor último contrato u OC</label>
           <input [(ngModel)]="proyecto.valorUltimoContrato" type="text" class="form-control" id="valorultimocontrato"
             placeholder="47100000">
+          <small class="text-danger">No definido en el excel</small>
         </div>
       </div>
       <div class="col-md-4">
@@ -105,9 +106,7 @@
           <label for="tipotarifa">Tipo de tarifa</label>
           <select [(ngModel)]="proyecto.tipoTarifa" class="form-control" id="tipotarifa">
             <option value="" disabled>Seleccione</option>
-            <option value="1">Hora</option>
-            <option value="2">Mes</option>
-            <option value="2">Entregables</option>
+            <option *ngFor="let t of TipoTarifa" value="{{t.id}}">{{t.nombre}}</option>
           </select>
         </div>
       </div>
