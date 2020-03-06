@@ -4,9 +4,9 @@ export interface Proyecto {
   nombre: string;
   cliente: string;
   fechaInicioContractual: string;
-  fehchaFinContractual: string;
+  fechaFinContractual: string;
   duracionProyecto: string;
-  servicioAlcance: string;
+  alcance: string;
   ocContrato: string;
   nContratoOc: string;
   moneda: string;

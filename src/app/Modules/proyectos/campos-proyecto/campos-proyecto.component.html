@@ -37,7 +37,7 @@
       <div class="col-md-4">
         <div class="form-group">
           <label for="fechafinproyecto">Fecha de fin contractual</label>
-          <input [(ngModel)]="proyecto.fehchaFinContractual" (keyup)="restarFechas()" (change)="restarFechas()"
+          <input [(ngModel)]="proyecto.fechaFinContractual" (keyup)="restarFechas()" (change)="restarFechas()"
             name="fechaFin" type="date" class="form-control" id="fechafinproyecto">
         </div>
       </div>
@@ -50,9 +50,8 @@
       </div>
       <div class="col-md-12">
         <div class="form-group">
-          <label for="servicioalcanve">Servicio / alcance</label>
-          <textarea [(ngModel)]="proyecto.servicioAlcance" class="form-control" id="servicioalcanve"
-            rows="2"></textarea>
+          <label for="alcance">Alcance</label>
+          <textarea [(ngModel)]="proyecto.alcance" class="form-control" id="alcance" rows="2"></textarea>
         </div>
       </div>
       <div class="col-md-4">
@@ -76,8 +75,7 @@
           <label for="moneda">Moneda</label>
           <select [(ngModel)]="proyecto.moneda" class="form-control" id="moneda">
             <option value="" disabled>Seleccione</option>
-            <option value="1">USD</option>
-            <option value="2">Cops</option>
+            <option *ngFor="let m of Monedas" value="{{m.id}}">{{m.nombre}}</option>
           </select>
         </div>
       </div>
