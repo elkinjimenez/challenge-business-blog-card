@@ -64,7 +64,7 @@ export class CamposProyectoComponent implements OnInit {
       { id: '4', nombre: 'Entregables' },
       { id: '5', nombre: 'Células' },
       { id: '6', nombre: 'Precios fijos' },
-    ]
+    ];
   }
 
 }
