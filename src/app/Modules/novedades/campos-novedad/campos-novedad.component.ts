@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Novedad } from 'src/app/Model/novedades/novedad';
+import { Novedad } from 'src/app/Model/novedad';
 
 @Component({
   selector: 'app-campos-novedad',

@@ -7,7 +7,8 @@
       <div class="col-md-4">
         <div class="form-group">
           <label for="codigoproyecto">Código del proyecto</label>
-          <input [(ngModel)]="proyecto.codigo" type="text" class="form-control" id="codigoproyecto" placeholder="54348">
+          <input [(ngModel)]="proyecto.codigo" type="text" maxlength="5" class="form-control" id="codigoproyecto"
+            placeholder="54348">
         </div>
       </div>
       <div class="col-md-4">
@@ -22,7 +23,7 @@
           <label for="cliente">Cliente</label>
           <select [(ngModel)]="proyecto.cliente" class="form-control" id="cliente">
             <option value="" disabled>Seleccione</option>
-            <option value="1">INTELISIS ASPEL SA DE CV</option>
+            <option *ngFor="let c of Clientes" value="c.id">{{c.nombres}}</option>
           </select>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Proyecto } from 'src/app/Model/proyectos/proyecto';
+import { Proyecto } from 'src/app/Model/proyecto';
 
 @Component({
   selector: 'app-editar-proyecto',
