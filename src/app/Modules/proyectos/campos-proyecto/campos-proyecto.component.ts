@@ -15,12 +15,28 @@ export class CamposProyectoComponent implements OnInit {
   TipoTarifa = [{ id: '', nombre: '' }];
   EstadoProyecto = [{ id: '', nombre: '' }];
   Categoria = [{ id: '', nombre: '' }];
+  Direccion = [{ id: '', nombre: '' }];
+  LineaNegocio = [{ id: '', nombre: '' }];
+  TipoProyecto = [{ id: '', nombre: '' }];
+  Servicio = [{ id: '', nombre: '' }];
 
   constructor() { }
 
   ngOnInit() {
     if (!this.proyecto) {
-      this.proyecto = { cliente: '', ocContrato: '', tipoTarifa: '', estadoProyecto: '', estadoContrato: '', moneda: '' } as Proyecto;
+      this.proyecto = {
+        cliente: '',
+        ocContrato: '',
+        tipoTarifa: '',
+        estadoProyecto: '',
+        estadoContrato: '',
+        moneda: '',
+        categoria: '',
+        direccion: '',
+        lineaNegocio: '',
+        tipoproyecto: '',
+        servicio: '',
+      } as Proyecto;
     }
 
     // PARA LOS SELECTS
@@ -29,6 +45,10 @@ export class CamposProyectoComponent implements OnInit {
     this.listarTiposTarifa();
     this.listarEstadosProyecto();
     this.listarCategorias();
+    this.listarDirecciones();
+    this.listarLineasNegocio();
+    this.listarTiposProyecto();
+    this.listarServicios();
   }
 
   restarFechas() {
@@ -74,19 +94,57 @@ export class CamposProyectoComponent implements OnInit {
   listarEstadosProyecto() {
     this.EstadoProyecto = [
       { id: '1', nombre: 'Activo' },
-      { id: '1', nombre: 'Cerrado' },
-      { id: '1', nombre: 'Liberado por operaciones' },
-      { id: '1', nombre: 'Pendiente por crear' },
-      { id: '1', nombre: 'Suspendido' },
+      { id: '2', nombre: 'Cerrado' },
+      { id: '3', nombre: 'Liberado por operaciones' },
+      { id: '4', nombre: 'Pendiente por crear' },
+      { id: '5', nombre: 'Suspendido' },
     ];
   }
 
   listarCategorias() {
     this.Categoria = [
       { id: '1', nombre: 'Costo Proyectos' },
-      { id: '1', nombre: 'Costo de ventas' },
-      { id: '1', nombre: 'Costo indirecto de operaciones' },
-      { id: '1', nombre: 'Costo indirecto Staff' },
+      { id: '2', nombre: 'Costo de ventas' },
+      { id: '3', nombre: 'Costo indirecto de operaciones' },
+      { id: '4', nombre: 'Costo indirecto Staff' },
+    ];
+  }
+
+  listarDirecciones() {
+    this.Direccion = [
+      { id: '1', nombre: 'Soporte' },
+      { id: '2', nombre: 'Ingeniería' },
+      { id: '3', nombre: 'Aplicaciones' },
+      { id: '4', nombre: 'Centro de desarrollo' },
+      { id: '5', nombre: 'Administraivo' },
+      { id: '6', nombre: 'Comercial verticales' },
+      { id: '7', nombre: 'Comercial horizontales' },
+
+    ];
+  }
+
+  listarLineasNegocio() {
+    this.LineaNegocio = [
+      { id: '1', nombre: 'Consultoría de sistemas' },
+      { id: '2', nombre: 'Fábrica de desarrollo de software' },
+      { id: '3', nombre: 'Integración de soluciones' },
+      { id: '4', nombre: 'Servicios y productos de tecnología' },
+    ];
+  }
+
+  listarTiposProyecto() {
+    this.TipoProyecto = [
+      { id: '1', nombre: 'Tipo 1' },
+      { id: '2', nombre: 'Tipo 2' },
+      { id: '3', nombre: 'Tipo 3' },
+    ];
+  }
+
+  listarServicios() {
+    this.Servicio = [
+      { id: '1', nombre: 'Servicio 1' },
+      { id: '2', nombre: 'Servicio 2' },
+      { id: '3', nombre: 'Servicio 3' },
     ]
   }
 

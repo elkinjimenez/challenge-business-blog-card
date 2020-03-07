@@ -39,6 +39,11 @@ export class ListaProyectosComponent implements OnInit {
         tipoTarifa: '2',
         tarifa: '44500',
         estadoProyecto: '1',
+        categoria: '1',
+        direccion: '2',
+        lineaNegocio: '2',
+        tipoproyecto: '1',
+        servicio: '2',
         subproyecto: '2342434',
         estadoContrato: '1',
       }

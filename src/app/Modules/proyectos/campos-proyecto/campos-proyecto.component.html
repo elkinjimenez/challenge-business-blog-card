@@ -128,9 +128,45 @@
       <div class="col-md-4">
         <div class="form-group">
           <label for="categoria">Categoría</label>
-          <select class="form-control" id="categoria">
+          <select [(ngModel)]="proyecto.categoria" class="form-control" id="categoria">
             <option value="" disabled>Seleccione</option>
             <option *ngFor="let c of Categoria" value="{{c.id}}">{{c.nombre}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <select [(ngModel)]="proyecto.direccion" class="form-control" id="direccion">
+            <option value="" disabled>Seleccione</option>
+            <option *ngFor="let d of Direccion" value="{{d.id}}">{{d.nombre}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="lineanegocio">Línea de negocio</label>
+          <select [(ngModel)]="proyecto.lineaNegocio" class="form-control" id="lineanegocio">
+            <option value="" disabled>Seleccione</option>
+            <option *ngFor="let l of LineaNegocio" value="{{l.id}}">{{l.nombre}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="tipoproyecto">Tipo de proyecto</label>
+          <select [(ngModel)]="proyecto.tipoproyecto" class="form-control" id="tipoproyecto">
+            <option value="" disabled>Seleccione</option>
+            <option *ngFor="let t of TipoProyecto" value="{{t.id}}">{{t.nombre}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="servicio">Servicio</label>
+          <select [(ngModel)]="proyecto.servicio" class="form-control" id="servicio">
+            <option value="" disabled>Seleccione</option>
+            <option *ngFor="let t of Servicio" value="{{t.id}}">{{t.nombre}}</option>
           </select>
         </div>
       </div>
@@ -153,6 +189,7 @@
           </select>
         </div>
       </div>
+
     </div>
 
   </div>
@@ -173,35 +210,6 @@
             <option>CLARO</option>
             <option>ECUADOR</option>
             <option>HITSS</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          <label for="direccion">Dirección</label>
-          <input type="text" class="form-control" id="direccion" placeholder="Centro de desarrollo de software">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          <label for="lineanegocio">Línea de negocio</label>
-          <select class="form-control" id="lineanegocio">
-            <option value="" disabled>Seleccione</option>
-            <option>Consultoría de sistemas</option>
-            <option>Fábrica de desarrollo de software</option>
-            <option>Integración de soluciones</option>
-            <option>Servicios y productos de tecnología</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          <label for="director">Director</label>
-          <select class="form-control" id="director">
-            <option value="" disabled>Seleccione</option>
-            <option>Gonzalo Montes</option>
-            <option>Sandra Serrano</option>
-            <option>Jose Lisandro Perez</option>
           </select>
         </div>
       </div>

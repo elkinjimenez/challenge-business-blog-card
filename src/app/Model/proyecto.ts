@@ -16,6 +16,11 @@ export interface Proyecto {
   tipoTarifa: string;
   tarifa: string;
   estadoProyecto: string;
+  categoria: string;
+  direccion: string;
+  lineaNegocio: string;
+  tipoproyecto: string;
+  servicio: string;
   subproyecto: string;
   estadoContrato: string;
 
