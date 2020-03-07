@@ -121,9 +121,16 @@
           <label for="estadoproyecto">Estado del proyecto</label>
           <select [(ngModel)]="proyecto.estadoProyecto" class="form-control" id="estadoproyecto">
             <option value="" disabled>Seleccione</option>
-            <option value="1">Activo</option>
-            <option value="2">Cerrado</option>
-            <option value="3">Liberado por operaciones</option>
+            <option *ngFor="let e of EstadoProyecto" value="{{e.id}}">{{e.nombre}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="categoria">Categoría</label>
+          <select class="form-control" id="categoria">
+            <option value="" disabled>Seleccione</option>
+            <option *ngFor="let c of Categoria" value="{{c.id}}">{{c.nombre}}</option>
           </select>
         </div>
       </div>
@@ -166,18 +173,6 @@
             <option>CLARO</option>
             <option>ECUADOR</option>
             <option>HITSS</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          <label for="categoria">Categoría</label>
-          <select class="form-control" id="categoria">
-            <option value="" disabled>Seleccione</option>
-            <option>Costo Proyectos</option>
-            <option>Costo de ventas</option>
-            <option>Administración</option>
-            <option>Ecuador</option>
           </select>
         </div>
       </div>

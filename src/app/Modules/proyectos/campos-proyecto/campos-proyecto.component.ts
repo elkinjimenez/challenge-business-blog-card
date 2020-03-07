@@ -13,6 +13,8 @@ export class CamposProyectoComponent implements OnInit {
   Clientes = [] as Cliente[];
   Monedas = [{ id: '', nombre: '' }];
   TipoTarifa = [{ id: '', nombre: '' }];
+  EstadoProyecto = [{ id: '', nombre: '' }];
+  Categoria = [{ id: '', nombre: '' }];
 
   constructor() { }
 
@@ -25,6 +27,8 @@ export class CamposProyectoComponent implements OnInit {
     this.listarClientes();
     this.listarMonedas();
     this.listarTiposTarifa();
+    this.listarEstadosProyecto();
+    this.listarCategorias();
   }
 
   restarFechas() {
@@ -65,6 +69,25 @@ export class CamposProyectoComponent implements OnInit {
       { id: '5', nombre: 'Células' },
       { id: '6', nombre: 'Precios fijos' },
     ];
+  }
+
+  listarEstadosProyecto() {
+    this.EstadoProyecto = [
+      { id: '1', nombre: 'Activo' },
+      { id: '1', nombre: 'Cerrado' },
+      { id: '1', nombre: 'Liberado por operaciones' },
+      { id: '1', nombre: 'Pendiente por crear' },
+      { id: '1', nombre: 'Suspendido' },
+    ];
+  }
+
+  listarCategorias() {
+    this.Categoria = [
+      { id: '1', nombre: 'Costo Proyectos' },
+      { id: '1', nombre: 'Costo de ventas' },
+      { id: '1', nombre: 'Costo indirecto de operaciones' },
+      { id: '1', nombre: 'Costo indirecto Staff' },
+    ]
   }
 
 }
