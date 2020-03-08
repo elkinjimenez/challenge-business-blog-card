@@ -12,7 +12,15 @@ import { CamposDnfComponent } from './dnf/campos-dnf/campos-dnf.component';
 
 
 @NgModule({
-  declarations: [EmpleadosComponent, ProyectosComponent, NovedadesComponent, DnfComponent, ListaDnfComponent, NuevoDnfComponent, CamposDnfComponent],
+  declarations: [
+    EmpleadosComponent,
+    ProyectosComponent,
+    NovedadesComponent,
+    DnfComponent,
+    ListaDnfComponent,
+    NuevoDnfComponent,
+    CamposDnfComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
