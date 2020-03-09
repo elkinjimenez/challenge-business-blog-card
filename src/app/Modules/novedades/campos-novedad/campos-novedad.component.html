@@ -62,8 +62,6 @@
       <label for="anio">Año</label>
       <input [(ngModel)]="novedad.anio" type="text" maxlength="4" name="anio" class="form-control" id="anio"
         placeholder="2020">
-      <input type="text" name="nombre" placeholder="Su nombre de usuario" minlength="5" maxlength="40" required
-        pattern="[A-Za-z0-9]+">
     </div>
   </div>
   <div class="col-md-4" *ngIf="novedad.tipoNovedad=='1' || novedad.tipoNovedad=='2'">
