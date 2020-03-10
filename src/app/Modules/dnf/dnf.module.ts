@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { DnfComponent } from './dnf/dnf.component';
 import { ListaProyectoComponent } from './lista-proyecto/lista-proyecto.component';
+import { DatosProyectoComponent } from './datos-proyecto/datos-proyecto.component';
 
 @NgModule({
-  declarations: [DnfComponent, ListaProyectoComponent],
+  declarations: [DnfComponent, ListaProyectoComponent, DatosProyectoComponent],
   imports: [
     CommonModule,
     FormsModule,
