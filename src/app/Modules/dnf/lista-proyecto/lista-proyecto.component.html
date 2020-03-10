@@ -1,0 +1,30 @@
+<div *ngIf="Proyectos.length !== 0; else ProyectosNulo">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <label for="tiponovedad">Selecciona un proyecto de la lista.</label>
+        </div>
+        <div class="col-md-10">
+          <div class="form-group">
+            <select name="tiponovedad" class="form-control form-control-lg" id="tiponovedad">
+              <option value="" disabled>Seleccione</option>
+              <option *ngFor="let p of Proyectos" value="{{p.codigo}}">{{p.nombre}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <a routerLink='/home/proyectos/nuevo' class="btn btn-primary btn-lg btn-block">Generar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #ProyectosNulo>
+  <div class="card">
+    <div class="card-body text-center">
+      <h5 class="my-4">No existen proyectos creados hasta el momento.</h5>
+      <a routerLink='/home/proyectos/nuevo' class="btn btn-primary">Crear proyecto</a>
+    </div>
+  </div>
+</ng-template>

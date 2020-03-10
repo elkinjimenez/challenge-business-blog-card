@@ -7,7 +7,7 @@ import { HomeModule } from './Modules/home/home.module';
 import { EmpleadosModule } from './Modules/empleados/empleados.module';
 import { ProyectosModule } from './Modules/proyectos/proyectos.module';
 import { NovedadesModule } from './Modules/novedades/novedades.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DnfModule } from './Modules/dnf/dnf.module';
 
 @NgModule({
