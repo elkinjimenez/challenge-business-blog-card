@@ -10,9 +10,7 @@ import { NuevoProyectoComponent } from './Modules/proyectos/nuevo-proyecto/nuevo
 import { IncapacidadesComponent } from './Modules/novedades/incapacidades/incapacidades.component';
 import { ListaProyectosComponent } from './Modules/proyectos/lista-proyectos/lista-proyectos.component';
 import { NuevaNovedadComponent } from './Modules/novedades/nueva-novedad/nueva-novedad.component';
-import { ListaDnfComponent } from './Modules/dnf/lista-dnf/lista-dnf.component';
-import { NuevoDnfComponent } from './Modules/dnf/nuevo-dnf/nuevo-dnf.component';
-
+import { DnfComponent } from './Modules/dnf/dnf/dnf.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -29,8 +27,7 @@ const routes: Routes = [
   { path: 'home/proyectos/lista', component: ListaProyectosComponent },
   { path: 'home/proyectos/nuevo', component: NuevoProyectoComponent },
   // DNF
-  { path: 'home/dnf/lista', component: ListaDnfComponent },
-  { path: 'home/dnf/nuevo', component: NuevoDnfComponent },
+  { path: 'home/dnf/generar', component: DnfComponent },
 ];
 
 @NgModule({
