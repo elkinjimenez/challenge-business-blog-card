@@ -9,6 +9,7 @@ import { Proyecto } from 'src/app/Model/proyecto';
 export class ListaProyectoComponent implements OnInit {
 
   Proyectos = [] as Proyecto[];
+  ProyectoSeleccionado: Proyecto;
   CodProyecto = '';
 
   constructor() { }
@@ -46,11 +47,12 @@ export class ListaProyectoComponent implements OnInit {
         estadoContrato: '1',
       }
     ];
-
   }
 
   datosProyecto() {
-    console.log(this.Proyectos.find( proyecto => proyecto.codigo === this.CodProyecto));
+    this.ProyectoSeleccionado = this.Proyectos.find(
+      proyecto => proyecto.codigo === this.CodProyecto
+    );
   }
 
 }
