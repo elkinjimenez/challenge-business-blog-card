@@ -9,10 +9,16 @@ import { Proyecto } from 'src/app/Model/proyecto';
 export class DatosProyectoComponent implements OnInit {
 
   @Input() Proyecto: Proyecto;
+  CodProyecto = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cambiarProyecto() {
+    this.Proyecto = undefined;
+    this.CodProyecto = '';
   }
 
 }

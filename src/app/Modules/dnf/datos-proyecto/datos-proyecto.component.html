@@ -1,10 +1,20 @@
 <div *ngIf="Proyecto">
   <div class="card">
     <div class="card-header">
-      <h5>Proyecto</h5>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="font-weight-bold my-0">{{Proyecto.nombre}}</h3>
+          <h6>Código: <span class="font-weight-bold text-secondary my-0">{{Proyecto.codigo}}</span></h6>
+        </div>
+        <div class="col-md-6 text-right">
+          <a (click)="cambiarProyecto()" class="btn text-white btn-danger mt-2">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="card-body">
-      <h5>{{Proyecto.nombre}}</h5>
+
     </div>
   </div>
 </div>
