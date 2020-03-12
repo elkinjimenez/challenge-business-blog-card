@@ -23,7 +23,7 @@ export class ListaProyectoComponent implements OnInit {
     this.Proyectos = [
       proyecto = {
         codigo: '1234',
-        nombre: 'Proyecto OCP',
+        nombre: 'OCP',
         cliente: '1',
         fechaInicioContractual: '2020/02/01',
         fechaFinContractual: '2020/03/30',
@@ -48,12 +48,12 @@ export class ListaProyectoComponent implements OnInit {
       },
       proyecto = {
         codigo: '123434',
-        nombre: 'Proyecto OCP 2',
+        nombre: 'IMEI',
         cliente: '1',
         fechaInicioContractual: '2020/02/01',
         fechaFinContractual: '2020/03/30',
         duracionProyecto: '60',
-        alcance: 'Servicio de análisis de causa raíz aplica para las PQRS asociadas a los servicios de Claro',
+        alcance: 'Servicio de análisis de causa raíz aplica para las PQRS asociadas',
         ocContrato: '1',
         nContratoOc: '4500137750',
         moneda: '1',
