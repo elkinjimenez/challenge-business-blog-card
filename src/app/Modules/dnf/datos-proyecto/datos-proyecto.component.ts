@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Proyecto } from 'src/app/Model/proyecto';
 
 @Component({
@@ -9,6 +9,7 @@ import { Proyecto } from 'src/app/Model/proyecto';
 export class DatosProyectoComponent implements OnInit {
 
   @Input() Proyecto: Proyecto;
+  @Output() DatosEnviados = new EventEmitter<string>();
   CodProyecto = '';
 
   constructor() { }
@@ -19,6 +20,7 @@ export class DatosProyectoComponent implements OnInit {
   cambiarProyecto() {
     this.Proyecto = undefined;
     this.CodProyecto = '';
+    this.DatosEnviados.emit(this.CodProyecto);
   }
 
 }
