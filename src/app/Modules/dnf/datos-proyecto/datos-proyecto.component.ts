@@ -11,6 +11,7 @@ export class DatosProyectoComponent implements OnInit {
   @Input() Proyecto: Proyecto;
   @Output() DatosEnviados = new EventEmitter<string>();
   CodProyecto = '';
+  botonGenerar = { texto: 'Generar', estado: true };
 
   constructor() { }
 
@@ -21,6 +22,13 @@ export class DatosProyectoComponent implements OnInit {
     this.Proyecto = undefined;
     this.CodProyecto = '';
     this.DatosEnviados.emit(this.CodProyecto);
+    this.botonGenerar.texto = 'Generar';
+    this.botonGenerar.estado = true;
+  }
+
+  GenerarDNF() {
+    this.botonGenerar.texto = 'Generando...';
+    this.botonGenerar.estado = false;
   }
 
 }
