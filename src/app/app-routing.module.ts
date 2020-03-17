@@ -7,10 +7,10 @@ import { CargaMasivaComponent } from './Modules/empleados/carga-masiva/carga-mas
 import { OtrasNovedadesComponent } from './Modules/novedades/otras-novedades/otras-novedades.component';
 import { LandingComponent } from './Modules/home/landing/landing.component';
 import { NuevoProyectoComponent } from './Modules/proyectos/nuevo-proyecto/nuevo-proyecto.component';
-import { IncapacidadesComponent } from './Modules/novedades/incapacidades/incapacidades.component';
 import { ListaProyectosComponent } from './Modules/proyectos/lista-proyectos/lista-proyectos.component';
 import { NuevaNovedadComponent } from './Modules/novedades/nueva-novedad/nueva-novedad.component';
 import { DnfComponent } from './Modules/dnf/dnf/dnf.component';
+import { ListaNovedadesComponent } from './Modules/novedades/lista-novedades/lista-novedades.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'home/empleados/carga-masiva', component: CargaMasivaComponent },
   // NOVEDADES
   { path: 'home/novedades/nueva', component: NuevaNovedadComponent },
-  { path: 'home/novedades/novedades', component: IncapacidadesComponent },
+  { path: 'home/novedades/novedades', component: ListaNovedadesComponent },
   { path: 'home/novedades/otras-nov', component: OtrasNovedadesComponent },
   // PROYECTOS
   { path: 'home/proyectos/lista', component: ListaProyectosComponent },
