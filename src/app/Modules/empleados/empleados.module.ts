@@ -10,6 +10,7 @@ import { CamposEmpleadoComponent } from './campos-empleado/campos-empleado.compo
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VerEmpleadoComponent } from './ver-empleado/ver-empleado.component';
+import { ListaEmpleadosComponent } from './lista-empleados/lista-empleados.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { VerEmpleadoComponent } from './ver-empleado/ver-empleado.component';
     ListaComponent,
     EditarEmpleadoComponent,
     CamposEmpleadoComponent,
-    VerEmpleadoComponent
+    VerEmpleadoComponent,
+    ListaEmpleadosComponent
   ],
   imports: [
     CommonModule,
