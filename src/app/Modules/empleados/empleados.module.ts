@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmpleadosComponent } from './empleados/empleados.component';
-import { NuevoComponent } from './nuevo/nuevo.component';
 import { CargaMasivaComponent } from './carga-masiva/carga-masiva.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { EditarEmpleadoComponent } from './editar-empleado/editar-empleado.component';
@@ -15,7 +14,6 @@ import { NuevoEmpleadoComponent } from './nuevo-empleado/nuevo-empleado.componen
 @NgModule({
   declarations: [
     EmpleadosComponent,
-    NuevoComponent,
     CargaMasivaComponent,
     EditarEmpleadoComponent,
     CamposEmpleadoComponent,

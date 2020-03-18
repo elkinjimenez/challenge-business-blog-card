@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './Modules/home/home/home.component';
 import { EmpleadosComponent } from './Modules/empleados/empleados/empleados.component';
-import { NuevoComponent } from './Modules/empleados/nuevo/nuevo.component';
 import { CargaMasivaComponent } from './Modules/empleados/carga-masiva/carga-masiva.component';
 import { OtrasNovedadesComponent } from './Modules/novedades/otras-novedades/otras-novedades.component';
 import { LandingComponent } from './Modules/home/landing/landing.component';
@@ -11,13 +10,14 @@ import { ListaProyectosComponent } from './Modules/proyectos/lista-proyectos/lis
 import { NuevaNovedadComponent } from './Modules/novedades/nueva-novedad/nueva-novedad.component';
 import { DnfComponent } from './Modules/dnf/dnf/dnf.component';
 import { ListaNovedadesComponent } from './Modules/novedades/lista-novedades/lista-novedades.component';
+import { NuevoEmpleadoComponent } from './Modules/empleados/nuevo-empleado/nuevo-empleado.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'home', component: HomeComponent },
   // EMPLEADOS
   { path: 'home/empleados', component: EmpleadosComponent },
-  { path: 'home/empleados/nuevo', component: NuevoComponent },
+  { path: 'home/empleados/nuevo', component: NuevoEmpleadoComponent },
   { path: 'home/empleados/carga-masiva', component: CargaMasivaComponent },
   // NOVEDADES
   { path: 'home/novedades/nueva', component: NuevaNovedadComponent },
