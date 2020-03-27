@@ -77,7 +77,7 @@
           <td>{{e.nombres}}</td>
           <td>{{e.salarioTotal}}</td>
           <td>
-            <a>
+            <a placement="left" ngbTooltip="Desactivar empleado: {{e.nombres}}">
               <i class="fas fa-toggle-off fa-lg"></i>
             </a>
             <a class="mx-2" placement="left" ngbTooltip="Editar empleado: {{e.nombres}}" (click)="verEmpleado(e)" data-toggle="modal"
