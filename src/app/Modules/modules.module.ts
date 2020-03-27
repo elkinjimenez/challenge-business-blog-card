@@ -7,7 +7,6 @@ import { NovedadesComponent } from './novedades/novedades/novedades.component';
 import { FormsModule } from '@angular/forms';
 import { DnfComponent } from './dnf/dnf/dnf.component';
 
-
 @NgModule({
   declarations: [
     EmpleadosComponent,
