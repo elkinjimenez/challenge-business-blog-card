@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VerEmpleadoComponent } from './ver-empleado/ver-empleado.component';
 import { ListaEmpleadosComponent } from './lista-empleados/lista-empleados.component';
 import { NuevoEmpleadoComponent } from './nuevo-empleado/nuevo-empleado.component';
+import { InactivarEmpleadoComponent } from './inactivar-empleado/inactivar-empleado.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NuevoEmpleadoComponent } from './nuevo-empleado/nuevo-empleado.componen
     CamposEmpleadoComponent,
     VerEmpleadoComponent,
     ListaEmpleadosComponent,
-    NuevoEmpleadoComponent
+    NuevoEmpleadoComponent,
+    InactivarEmpleadoComponent
   ],
   imports: [
     CommonModule,

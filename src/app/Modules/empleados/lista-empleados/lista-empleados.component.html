@@ -1,96 +1,44 @@
 <div class="d-flex justify-content-between mb-4">
-    <h5 class="font-weight-bold">Listado de empleados.</h5>
-    <a routerLink='/home/empleados/nuevo' class="btn btn-primary">Nuevo empleado</a>
-  </div>
-  <!-- <div class="table-responsive text-center">
-    <table class="table table-hover table-bordered table-sm">
-      <thead class="cabecera-tabla">
-        <tr>
-          <th scope="col">Código</th>
-          <th scope="col">Tipo de contrato</th>
-          <th scope="col">Documento</th>
-          <th scope="col">Rol</th>
-          <th scope="col">Nombres</th>
-          <th scope="col">Fecha ingreso</th>
-          <th scope="col">Equipo</th>
-          <th scope="col">Tipo de salario</th>
-          <th scope="col">Salario Total</th>
-          <th scope="col">Salario</th>
-          <th scope="col">Beneficio</th>
-          <th scope="col">Costo estandar mes</th>
-          <th scope="col">Descuento</th>
-          <th scope="col">Novedad</th>
-          <th scope="col">Observaciones</th>
-          <th scope="col">Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let e of empleados">
-          <td>{{e.codigo}}</td>
-          <td>{{e.tipoContrato}}</td>
-          <td>{{e.documento}}</td>
-          <td>{{e.rol}}</td>
-          <td>{{e.nombres}}</td>
-          <td>{{e.fechaIngreso}}</td>
-          <td>{{e.equipo}}</td>
-          <td>{{e.tipoSalario}}</td>
-          <td>{{e.salarioTotal}}</td>
-          <td>{{e.salario}}</td>
-          <td>{{e.beneficio}}</td>
-          <td>{{e.costoEstandarMes}}</td>
-          <td>{{e.descuento}}</td>
-          <td>{{e.novedad}}</td>
-          <td>{{e.observaciones}}</td>
-          <td>
-            <a placement="left" ngbTooltip="Editar empleado: {{e.nombres}}" (click)="verEmpleado(e)" data-toggle="modal"
-              data-target=".modal-editar-empleado">
-              <i class="fas fa-pencil-alt fa-lg"></i>
-            </a>
-            <a placement="left" ngbTooltip="Ver empleado: {{e.nombres}}" (click)="verEmpleado(e)" data-toggle="modal"
-              class="mx-2" data-target=".modal-ver-empleado">
-              <i class="fas fa-eye fa-lg"></i>
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div> -->
-  <app-editar-empleado [empleado]="empleadoSeleccionado"></app-editar-empleado>
-  <app-ver-empleado [empleado]="empleadoSeleccionado"></app-ver-empleado>
-  <div class="table-responsive text-center">
-    <table class="table table-hover table-bordered table-sm">
-      <thead class="cabecera-tabla">
-        <tr>
-          <th scope="col">Código</th>
-          <th scope="col">Documento</th>
-          <th scope="col">Rol</th>
-          <th scope="col">Nombres</th>
-          <th scope="col">Salario Total</th>
-          <th scope="col">Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let e of empleados">
-          <td>{{e.codigo}}</td>
-          <td>{{e.documento}}</td>
-          <td>{{e.rol}}</td>
-          <td>{{e.nombres}}</td>
-          <td>{{e.salarioTotal}}</td>
-          <td>
-            <a placement="left" ngbTooltip="Desactivar empleado: {{e.nombres}}">
-              <i class="fas fa-toggle-off fa-lg"></i>
-            </a>
-            <a class="mx-2" placement="left" ngbTooltip="Editar empleado: {{e.nombres}}" (click)="verEmpleado(e)" data-toggle="modal"
-              data-target=".modal-editar-empleado">
-              <i class="fas fa-pencil-alt fa-lg"></i>
-            </a>
-            <a placement="left" ngbTooltip="Ver empleado: {{e.nombres}}" (click)="verEmpleado(e)" data-toggle="modal"
-              data-target=".modal-ver-empleado">
-              <i class="fas fa-eye fa-lg"></i>
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
+  <h5 class="font-weight-bold">Listado de empleados.</h5>
+  <a routerLink='/home/empleados/nuevo' class="btn btn-primary">Nuevo empleado</a>
+</div>
+<app-inactivar-empleado [empleado]="empleadoSeleccionado"></app-inactivar-empleado>
+<app-editar-empleado [empleado]="empleadoSeleccionado"></app-editar-empleado>
+<app-ver-empleado [empleado]="empleadoSeleccionado"></app-ver-empleado>
+<div class="table-responsive text-center">
+  <table class="table table-hover table-bordered table-sm">
+    <thead class="cabecera-tabla">
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Documento</th>
+        <th scope="col">Rol</th>
+        <th scope="col">Nombres</th>
+        <th scope="col">Salario Total</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of empleados">
+        <td>{{e.codigo}}</td>
+        <td>{{e.documento}}</td>
+        <td>{{e.rol}}</td>
+        <td>{{e.nombres}}</td>
+        <td>{{e.salarioTotal}}</td>
+        <td>
+          <a class="pointer" placement="left" ngbTooltip="Desactivar empleado: {{e.nombres}}" (click)="verEmpleado(e)"
+            data-toggle="modal" data-target=".modal-inactivar-empleado">
+            <i class="fas fa-toggle-off fa-lg"></i>
+          </a>
+          <a class="mx-2 pointer" placement="left" ngbTooltip="Editar empleado: {{e.nombres}}" (click)="verEmpleado(e)"
+            data-toggle="modal" data-target=".modal-editar-empleado">
+            <i class="fas fa-pencil-alt fa-lg"></i>
+          </a>
+          <a class="pointer" placement="left" ngbTooltip="Ver empleado: {{e.nombres}}" (click)="verEmpleado(e)"
+            data-toggle="modal" data-target=".modal-ver-empleado">
+            <i class="fas fa-eye fa-lg"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
